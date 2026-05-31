@@ -9,6 +9,11 @@
 
 `npm install -D drizzle-kit`
 
+`npm i winston` logger
+
+`npm i helmet` http header security
+
+
 ### ESLint
 
 `npm run lint`: search linting errors

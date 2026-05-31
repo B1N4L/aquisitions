@@ -4,6 +4,16 @@
   "description": "",
   "type": "module",
   "main": "src/index.js",
+  "imports": {
+    "#routes/*": "./src/routes/*",
+    "#config/*": "./src/config/*",
+    "#middleware/*": "./src/middleware/*",
+    "#controllers/*": "./src/controllers/*",
+    "#services/*": "./src/services/*",
+    "#models/*": "./src/models/*",
+    "#utils/*": "./src/utils/*",
+    "#validations/*": "./src/validations/*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch src/index.js",
@@ -30,7 +40,9 @@
     "@neondatabase/serverless": "^1.1.0",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "helmet": "^8.2.0",
+    "winston": "^3.19.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
