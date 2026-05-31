@@ -13,6 +13,13 @@
 
 `npm i helmet` http header security
 
+`npm install morgan` 
+
+`npm i cors cookie-parser` cross-origin resource sharing and read cookies
+
+`npm i jsonwebtoken` JWT for authentication
+
+`npm install zod` schema validation
 
 ### ESLint
 
