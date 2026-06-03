@@ -50,12 +50,12 @@ const securityMiddleware = async (req, res, next) => {
       });
     }
 
-    if (decision.isDenied && decision.reason.isRateLimit()) {
-      return res.status(429).json({
-        error: 'Too Many Requests',
-        message,
-      });
-    }
+    // if (decision.isDenied && decision.reason.isRateLimit()) {
+    //   return res.status(429).json({
+    //     error: 'Too Many Requests',
+    //     message,
+    //   });
+    // }
 
     next();
   } catch (e) {
